@@ -1,4 +1,4 @@
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject() -- NEW UPDATE ESX 1.10.7 Tutoriel = https://documentation.esx-framework.org/tutorials/tutorials-esx/sharedevent
 
 GangsData = {}
 
