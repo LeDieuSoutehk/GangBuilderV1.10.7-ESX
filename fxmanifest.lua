@@ -27,7 +27,7 @@ client_scripts {
 }
 
 client_scripts {
-	'@es_extended/locale.lua',
+	'@es_extended/locale.lua', 
 	'locales/fr.lua',
 	'config.lua',
 	'client/builder.lua',
@@ -36,7 +36,7 @@ client_scripts {
 }
 
 server_scripts {
-	'@mysql-async/lib/MySQL.lua',
+	'@mysql-async/lib/MySQL.lua', --'@oxmysql/lib/MySQL.lua'
 	'@es_extended/locale.lua',
 	'locales/fr.lua',
 	'config.lua',
