@@ -1,3 +1,5 @@
+ESX = exports["es_extended"]:getSharedObject() -- NEW UPDATE ESX 1.10.7 Tutoriel = https://documentation.esx-framework.org/tutorials/tutorials-esx/sharedevent
+
 local PlayerData = {}
 
 local GUI = {}
@@ -13,11 +15,6 @@ local CurrentActionData = {}
 local isDead = false
 
 Citizen.CreateThread(function()
-	while ESX == nil do
-		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-		Citizen.Wait(10)
-	end
-
 	while ESX.GetPlayerData().job2 == nil do
 		Citizen.Wait(10)
 	end
